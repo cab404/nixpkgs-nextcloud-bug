@@ -20,25 +20,6 @@
         "type": "github"
       }
     },
-    "naersk": {
-      "inputs": {
-        "nixpkgs": "nixpkgs_2"
-      },
-      "locked": {
-        "lastModified": 1595240294,
-        "narHash": "sha256-pLIbAvNT7wpxsLYT4O3KT5Q5e3axrxlGZinCnOMPLVk=",
-        "owner": "nmattia",
-        "repo": "naersk",
-        "rev": "dcee40445cfe301ced2d1b11290d6a94ff3aadb9",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nmattia",
-        "ref": "master",
-        "repo": "naersk",
-        "type": "github"
-      }
-    },
     "nixops": {
       "inputs": {
         "nixpkgs": [
@@ -77,26 +58,11 @@
         "type": "github"
       }
     },
-    "nixpkgs_2": {
-      "locked": {
-        "lastModified": 1596879421,
-        "narHash": "sha256-D6cmbkxYpRu2INu+f0xS2yI6JOv+eUfUrzj5CCogwns=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "3317fb0b7755c237dd42a4283bce281d7786afba",
-        "type": "github"
-      },
-      "original": {
-        "id": "nixpkgs",
-        "type": "indirect"
-      }
-    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "nixops": "nixops",
-        "nixpkgs": "nixpkgs",
-        "wg-bond": "wg-bond"
+        "nixpkgs": "nixpkgs"
       }
     },
     "utils": {
@@ -111,43 +77,6 @@
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "utils_2": {
-      "locked": {
-        "lastModified": 1593533949,
-        "narHash": "sha256-j5OH1uR8Mu/NqYH44+gnPln0eoGNNahxl0qNSYNi0Og=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "400fa6d9af95481440d8d69a6b49de5901936730",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "wg-bond": {
-      "inputs": {
-        "naersk": "naersk",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "utils": "utils_2"
-      },
-      "locked": {
-        "lastModified": 1614800249,
-        "narHash": "sha256-fF/zVbLUgGx/i+i3pZzPPg2F+tOLRiiATdySgsscfrQ=",
-        "owner": "cab404",
-        "repo": "wg-bond",
-        "rev": "aa3580de35483744773e8818302bcba7a4f4d459",
-        "type": "github"
-      },
-      "original": {
-        "owner": "cab404",
-        "repo": "wg-bond",
         "type": "github"
       }
     }

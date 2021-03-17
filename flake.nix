@@ -2,7 +2,6 @@
   description = "A very basic flake";
 
   inputs = {
-    wg-bond.url = "github:cab404/wg-bond";
     nixops.url = "github:nixos/nixops/master";
     nixpkgs.url = "github:nixos/nixpkgs/master";
     home-manager.url = "github:nix-community/home-manager";
@@ -12,7 +11,7 @@
 
   };
 
-  outputs = { self, nixpkgs, nixops, wg-bond, home-manager, ... }:
+  outputs = { self, nixpkgs, nixops, home-manager, ... }:
     let
       sys = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages."${sys}";
@@ -22,8 +21,6 @@
           buildInputs = [
             nixops.defaultPackage."${sys}"
             pkgs.nixfmt
-            wg-bond.defaultPackage.x86_64-linux
-
           ];
         };
 
